@@ -25,3 +25,13 @@
 - <strong>VPC:</strong> Selecione a VPC desejada, nesse caso a VPC criada nos passos acima <strong>Minha-VPC</strong>
 - Clique em Criar tabela de rotas.
 - Agora devemos associar as nossas sub-redes a Tabela de rotas criada(Tabela-Exemplo), mas antes devemos criar uma Internet Gateway
+
+### Criando Internet Gateway
+- Clique em Gateways da Internet
+- <strong>Tag de nome: </strong>igw-exemplo
+- Clique em criar gateway da internet
+- Após criado devemos dar um Attach para nossa VPC, Clique em <i>Attach to VPC</i> e Selecione a VPC(<strong>Minha-VPC</strong>)
+- Com isso configurado agora podemos tornar as nossas Sub-Redes criadas em Sub-Redes públicas
+- Vá Até Tabelas de Rotas, selecione a Tabela desejada então edite suas Rotas -> <strong>Destino:</strong> 0.0.0.0/0 | <strong>Alvo:</strong> Gateway Criado(<strong>igw-exemplo</strong>)
+- Continuamos na Tabela de Rotas e agora iremos associar as Sub-Redes criadas a essa Tabela de Rotas(<strong>Tabela-Exemplo</strong>)
+- Clique em Editar associação de sub-rede e selecione as sub-redes desejadas.
