@@ -97,3 +97,42 @@
   </table>
   
 - Clique em Criar grupo de segurança.
+
+
+## Criando a Instância EC2
+- Clique em instâncias, executar instância
+### Nomes e Tags:
+- Crie 3 Tags
+<table>
+    <tr>
+      <th>Chave</th>
+      <th>Valor</th>
+    </tr>
+    <tr>
+      <td>Project</td>
+      <td>PB</td>
+    </tr>
+    <tr>
+      <td>CostCenter</td>
+      <td>PBCompass</td>
+    </tr>
+    <tr>
+      <td>Name</td>
+      <td>Seu nome</td>
+    </tr>
+</table>
+
+### Selecione a imagem de aplicação:
+- Amazon Linux 2
+### Selecione o tipo da instância:
+- t3.small
+### Selecionar/Criar o Key pair(login):
+- Caso já tenha uma key pair não é necessario a criação de outra.
+- Caso não possua, clique em Create new key pair, dê um nome a ela e faça o download do arquivo .pem ou .ppk(Putty)
+### Edite as configurações de Rede:
+- <strong>VPC: </strong>Selecione a VPC criada anteriormente(<strong>Minha-VPC</strong>)
+- <strong>Sub-rede:</strong> Selecione a sub-rede criada
+- Selecione um grupo de segurança existente, escolha o que foi criado anteriormente(<strong>SG-Exemplo</strong>)
+### Configurar Armazenamento:
+- Crie um disco GP2 de 16GiB
+- Verifique todos os dados preenchidos e Clique em Executar Instância
