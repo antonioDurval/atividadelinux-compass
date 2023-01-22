@@ -142,3 +142,11 @@
 - Clique em Alocar
 - Após alocado clique em ações e Associar Endereço IP Elástico
 - Selecione a instância em que ele será alocado e clique em associar.
+
+### Acessando Instância EC2:
+- acesse sua instância EC2 via SSH(Windows): ssh -i ./caminho/key-pair.pem ec2-user@IP-Instancia
+- Após ter o acesso a instância baixe o Apache seguindo os passos:
+  - sudo yum update
+  - sudo yum install httpd
+  - sudo systemctl start httpd
+  - sudo systemctl enable httpd
