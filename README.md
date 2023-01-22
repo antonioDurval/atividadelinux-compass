@@ -35,3 +35,65 @@
 - Vá Até Tabelas de Rotas, selecione a Tabela desejada então edite suas Rotas -> <strong>Destino:</strong> 0.0.0.0/0 | <strong>Alvo:</strong> Gateway Criado(<strong>igw-exemplo</strong>)
 - Continuamos na Tabela de Rotas e agora iremos associar as Sub-Redes criadas a essa Tabela de Rotas(<strong>Tabela-Exemplo</strong>)
 - Clique em Editar associação de sub-rede e selecione as sub-redes desejadas.
+
+## Criando o Security Group
+- Selecione o serviço de EC2.
+- Clique em Security Groups, criar grupo de segurança.
+
+###  Criar Grupo de Segurança - Informações
+- <strong>Nome do grupo de segurança: </strong>SG-Exemplo
+- Descrição: Descrição desejada
+- <strong>VPC: </strong>Selecione a VPC desejada(<strong>Minha-VPC</strong>)
+- Crie as seguintes regras de Entrada:
+  <table>
+    <tr>
+      <th>Tipo</th>
+      <th>Protocolo</th>
+      <th>Intervalo de portas</th>
+      <th>Origem</th> 
+    </tr>
+    <tr>
+      <td>TCP pernsonalizado</td>
+      <td>TCP</td>
+      <td>111</td>
+      <td>0.0.0.0/0</td>
+    </tr>
+    <tr>
+      <td>UDP personalizado</td>
+      <td>UDP</td>
+      <td>111</td>
+      <td>0.0.0.0/0</td>
+    </tr>
+    <tr>
+      <td>HTTPS</td>
+      <td>TCP</td>
+      <td>443</td>
+      <td>0.0.0.0/0</td>
+    </tr>
+    <tr>
+      <td>HTTP</td>
+      <td>TCP</td>
+      <td>80</td>
+      <td>0.0.0.0/0</td>
+    </tr>
+    <tr>
+      <td>NFS</td>
+      <td>TCP</td>
+      <td>2049</td>
+      <td>0.0.0.0/0</td>
+    </tr>
+    <tr>
+      <td>UDP personalizado</td>
+      <td>UDP</td>
+      <td>2049</td>
+      <td>0.0.0.0/0</td>
+    </tr>
+    <tr>
+      <td>SSH</td>
+      <td>TCP</td>
+      <td>22</td>
+      <td>Meu IP</td>
+    </tr>
+  </table>
+  
+- Clique em Criar grupo de segurança.
