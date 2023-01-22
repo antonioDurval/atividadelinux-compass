@@ -1,1 +1,4 @@
 22/01/2023 17:55:01 - Apache está ativo
+22/01/2023 18:00:01 - Apache está ativo
+22/01/2023 18:10:01 - Apache está ativo
+22/01/2023 18:15:01 - HTTPD, ONLINE, O Apache está ativo

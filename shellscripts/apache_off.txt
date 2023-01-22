@@ -1,2 +1,3 @@
 22/01/2023 17:21:19 - Apache não está ativo
 22/01/2023 17:21:21 - Apache não está ativo
+22/01/2023 18:20:01 - HTTPD, OFFLINE, O Apache não está ativo
