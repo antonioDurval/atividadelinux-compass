@@ -136,3 +136,9 @@
 ### Configurar Armazenamento:
 - Crie um disco GP2 de 16GiB
 - Verifique todos os dados preenchidos e Clique em Executar Instância
+
+###  Criar Elastic IP:
+- Clique em IPs elásticos, depois em Alocar endereço IP elástico
+- Clique em Alocar
+- Após alocado clique em ações e Associar Endereço IP Elástico
+- Selecione a instância em que ele será alocado e clique em associar.
